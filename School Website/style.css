@@ -22,13 +22,12 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-  
   position: fixed;
   z-index: 999;
 }
 
 nav img {
-
+  border: 2px solid red;
   width: 150px;
 }
 
