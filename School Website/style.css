@@ -278,6 +278,7 @@ h3 {
 .facility-col:hover {
   transform: scale(1.1);
 }
+
 .facility-col h3 {
   margin-top: 10px;
   margin-bottom: 15px;
