@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Zay shop e-commerce</title>
 
     <!-- font-family -->
@@ -35,24 +35,27 @@
         <a href=""><img src="img/apple-icon.png" alt="" /></a>
         <div class="nav-items" id="nav-items">
           <i class="fa-solid fa-xmark toggle" id="sideBar-close"></i>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#course">COURSE</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <ul class="nav-links">
+            <li class="li"><a href="#">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="course.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
+        </div>
+        <div class="dashboard">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <i class="fa-solid fa-user"></i>
         </div>
         <i class="fa-solid fa-bars toggle" id="sideBar-open"></i>
       </nav>
     </section>
 
     <section class="hero-section">
-      <div class="hero-container row">
+      <div class="hero-container row" id="row">
         <div class="left">
           <div class="content">
-            <h1>Zay <span>eCommerce</span></h1>
-            <h3>Tiny and Perfect eCommerce Template</h3>
+            <h1><b>Zay</b> eCommerce</h1>
+            <h2>Tiny and Perfect eCommerce <br />Template</h2>
             <p>
               Zay Shop is an eCommerce HTML5 CSS template with latest version.
               This template is 100% free provided by TemplateMo website. Image
@@ -61,7 +64,7 @@
           </div>
         </div>
         <div class="right">
-          <img src="img/banner_img_01.jpg" alt="" />
+          <img src="img/banner_img_02.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -71,7 +74,7 @@
       <h1>Categories of The Month</h1>
       <p>
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt <br />mollit anim id est laborum.
+        officia deserunt mollit anim id est laborum.
       </p>
       <div class="row">
         <div class="products-col">
@@ -113,7 +116,7 @@
                 </li>
                 <li class="Reviews-text">$360.00</li>
               </ul>
-              <h2>Summer Addides Shoes</h2>
+              <a href="#"><h2>Gym Weight</h2></a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
                 in culpa qui officia deserunt.
@@ -136,7 +139,7 @@
                 </li>
                 <li class="Reviews-text">$360.00</li>
               </ul>
-              <h2>Cloud Nike Shoes</h2>
+              <a href="#"><h2>Cloud Nike Shoes</h2></a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
                 in culpa qui officia deserunt.
@@ -159,7 +162,7 @@
                 </li>
                 <li class="Reviews-text">$360.00</li>
               </ul>
-              <h2>Summer Addides Shoes</h2>
+              <a href="#"><h2>Summer Addides Shoes</h2></a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
                 in culpa qui officia deserunt.
@@ -171,7 +174,7 @@
       </div>
     </section>
 
-    <footer>
+    
       <section class="footer">
         <div class="row">
           <div class="footer-col">
@@ -236,7 +239,7 @@
         </div>
         <hr />
 
-        <div class="row fool">
+        <div class="row">
           <div class="contacts">
             <a target="_blank" href="http://facebook.com/"
               ><i class="fa-brands fa-facebook-f"></i>
@@ -259,10 +262,11 @@
             <div class="input">
               <input
                 type="text"
+                class="subscribeEmail"
                 id="subscribeEmail"
                 placeholder="Email address"
               />
-              <button class="btn-success" id="subscribeEmail">Subscribe</button>
+              <button id="btn-success" class="subscribeEmail">Subscribe</button>
             </div>
           </div>
         </div>
