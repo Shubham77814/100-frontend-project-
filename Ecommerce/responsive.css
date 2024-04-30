@@ -1,0 +1,99 @@
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+
+.navbar {
+  padding: 0;
+  width: 100%;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+  position: sticky;
+}
+
+nav img {
+  width: 50px;
+}
+
+.nav-items {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-items ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-items ul li a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.nav-items ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-items ul li:hover::after {
+  width: 100%;
+}
+
+nav .toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-items ul li {
+    display: block;
+    color: #fff;
+  }
+
+  .nav-items ul li a {
+    color: wheat;
+  }
+
+  .nav-items {
+    height: 100vh;
+    width: 250px;
+
+    position: absolute;
+    top: 0;
+    right: -300px;
+    text-align: left;
+    z-index: 2;
+    background: #1d242d;
+    transition: 0.5s;
+  }
+
+  nav .toggle {
+    display: block;
+  }
+
+  nav i {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .nav-items ul {
+    padding: 30px;
+  }
+}
