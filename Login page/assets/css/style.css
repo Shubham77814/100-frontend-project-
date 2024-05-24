@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap");
+
+/*============ VARIABLE CSS ========*/
+
+:root {
+  /*===== Colors =====*/
+  --title-color: hsl(0, 0%, 13%);
+  --border-color-alt: hsl(113, 15%, 90%);
+  --first-color: hsl(176, 88%, 27%);
+  /*===== fonts =====*/
+  --h3-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+
+  /* ===== Font weight ==== */
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  --body-font: "Lato", sans-serif;
+  --second-font: "Spartan", sans-serif;
+
+  /* ===== Transition ==== */
+  --transition: cubic-bezier(0, 0, 0.05, 1);
+}
+
+/*======= BASE ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--second-font);
+}
+
+h3 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.section__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form__input {
+  border: 2px solid var(--border-color-alt);
+  padding: 1rem;
+  height: 45px;
+  border-radius: 0.25rem;
+  font-size: var(--small-font-size);
+}
+
+.btn {
+  display: inline-flex;
+  padding-inline: 1.75rem;
+  color: white;
+  height: 46px;
+  line-height: 46px;
+  font-weight: var(--weight-700);
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  border: 2px solid var(--first-color);
+  background-color: var(--first-color);
+  border-radius: 0.25rem;
+  transition: all 0.4s var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--first-color);
+}
+
+/*====== Form ===*/
+
+.login-register {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1.5rem;
+}
+
+.login,
+.register {
+  width: 450px;
+  border: 2px solid var(--border-color-alt);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
