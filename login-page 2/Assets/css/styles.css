@@ -7,6 +7,10 @@
   --title-color: hsl(0, 0%, 13%);
   --border-color-alt: hsl(113, 15%, 90%);
   --first-color: hsl(176, 88%, 27%);
+  --white-color: #fff;
+  --text-color: hsl(154, 13%, 32%);
+  --body-color: hsl(0, 0%, 100%);
+
   /*===== fonts =====*/
   --h3-font-size: 1.75rem;
   --normal-font-size: 1rem;
@@ -18,6 +22,7 @@
   --weight-600: 600;
   --weight-700: 700;
 
+  /*====font-family ==== */
   --body-font: "Lato", sans-serif;
   --second-font: "Spartan", sans-serif;
 
@@ -31,6 +36,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--second-font);
+}
+
+body {
+  background-color: grey;
 }
 
 h3 {
@@ -51,29 +60,29 @@ input {
 
 .form {
   display: grid;
-  gap: 1.5rem;
+}
+
+ul {
+  list-style: none;
 }
 
 .form__input {
-  border: 2px solid var(--border-color-alt);
+  font-size: var(--normal-font-size);
   padding: 1rem;
-  height: 45px;
+  height: 49px;
   border-radius: 0.25rem;
-  font-size: var(--small-font-size);
 }
 
 .btn {
-  display: inline-flex;
   padding-inline: 1.75rem;
   color: white;
   height: 46px;
   line-height: 46px;
   font-weight: var(--weight-700);
-  font-family: var(--second-font);
   font-size: var(--small-font-size);
   border: 2px solid var(--first-color);
   background-color: var(--first-color);
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   transition: all 0.4s var(--transition);
   cursor: pointer;
 }
@@ -90,14 +99,97 @@ input {
   transform: translate(-50%, -50%);
   gap: 1.5rem;
   border: 2px solid var(--border-color-alt);
-  border-radius: 0.5rem;
-  padding: 1rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: var(--white-color);
 }
 
-.login,
+.login__description {
+  margin-bottom: 1.5rem;
+  font-weight: var(--weight-400);
+  color: rgba(173, 173, 173, 255);
+}
+
+.phone__title {
+  color: rgba(160, 160, 163, 255);
+  font-weight: var(--weight-400);
+  margin-bottom: 0.5rem;
+}
+
+.form__input-container {
+  border: 2px solid var(--border-color-alt);
+  height: 49px;
+  line-height: center;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+  overflow: hidden;
+}
+
+.form__nepal-flag {
+  width: 35px;
+}
+
+.form__btn {
+  margin-block: 2rem;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.divider span {
+  position: relative;
+  background-color: var(--body-color);
+  padding-inline: 1.25rem;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 39%;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid var(--border-color-alt);
+}
+
+.social__media-item {
+  display: grid;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.social__media-link {
+  height: 49px;
+  border: 2px solid var(--border-color-alt);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-500);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.media__img {
+  width: 25px;
+  margin-inline-end: 1rem;
+}
+
+.register{
+  text-align: center;
+}
+
+#login-btn{
+  color: black;
+}
+/* .login,
 .register {
   width: 450px;
   border: 2px solid var(--border-color-alt);
   border-radius: 0.5rem;
   padding: 2rem;
-}
+} */

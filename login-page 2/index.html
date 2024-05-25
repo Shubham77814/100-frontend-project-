@@ -11,7 +11,44 @@
     <section class="login-register">
       <h3 class="section__title">Welcome Back</h3>
       <p class="login__description">
-        Please enter your phone number. You will receive a text message <br> to verify your account. Message & data rates may apply.
+        Please enter your phone number. You will receive a text message <br />
+        to verify your account. Message & data rates may apply.
+      </p>
+
+      <form action="" class="form">
+        <label for="login-phone" class="phone__title"> Phone Number </label>
+        <div class="form__input-container">
+          <img
+            src="./Assets/Img/nepal flag.svg"
+            alt=""
+            class="form__nepal-flag"
+          />
+          <input type="email" placeholder="Your email" class="form__input" />
+        </div>
+
+        <button class="btn form__btn">Continue</button>
+      </form>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <ul class="social__media-item">
+        <li class="social__media-link">
+          <img src="./Assets/Img/email.png" alt="" class="media__img" />
+          Continue with Email
+        </li>
+        <li class="social__media-link">
+          <img src="./Assets/Img/facebook.png" alt="" class="media__img" />
+          Continue with Facebook
+        </li>
+        <li class="social__media-link">
+          <img src="./Assets/Img/google.png" alt="" class="media__img" />
+          Continue with Google
+        </li>
+      </ul>
+      <p class="register">
+        Already have an Account? <span id="login-btn">Log In</span>
       </p>
     </section>
   </body>
