@@ -172,6 +172,7 @@ ul {
   font-weight: var(--weight-500);
   border-radius: 2rem;
   cursor: pointer;
+  padding-block: 1rem;
 }
 
 .media__img {
@@ -179,12 +180,13 @@ ul {
   margin-inline-end: 1rem;
 }
 
-.register{
+.register {
   text-align: center;
 }
 
-#login-btn{
+#login-btn {
   color: black;
+  text-decoration: underline;
 }
 /* .login,
 .register {
