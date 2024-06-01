@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #191825;
+}
+
+.cradle {
+  width: 500px;
+  height: 500px;
+  border-top: 10px solid #865dff;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+div {
+  width: 5px;
+  height: 200px;
+  background-color: #865dff;
+  position: relative;
+  top: -2px;
+}
+
+.cradle div::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  border-radius: 50%;
+  background-color: #865dff;
+  left: -20px;
+  width: 50px;
+  aspect-ratio: 1;
+  height: 50px;
+}
+
+.cradle :first-child {
+  transform-origin: top left;
+  animation: left-swing 2s linear infinite ;
+}
+
+.cradle :last-child {
+  transform-origin: top left;
+  animation: right-swing 2s linear 1s infinite ;
+}
+
+@keyframes left-swing {
+  0% {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: 30deg;
+  }
+
+  50% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes right-swing {
+  0% {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: -30deg;
+  }
+
+  50% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
