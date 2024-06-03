@@ -19,7 +19,8 @@ body {
   background-color: transparent;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 45px;
+  
 }
 
 div {
