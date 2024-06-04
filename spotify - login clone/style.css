@@ -79,7 +79,6 @@ section {
 }
 
 .account__connect-link span {
-
   color: #fff;
   position: relative;
   top: 3px;
@@ -120,34 +119,28 @@ hr {
   box-shadow: inset 0 0 0 1px #878787;
 }
 
-.form__input:hover{
+.form__input:hover {
   border-color: #fff;
 }
 
-.switch{
+.switch {
   margin: 0;
   padding: 0;
 }
 
-.switch input[type=checked]{
+.switch input[type="checked"] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.switch  label{
-  
+.switch label {
   margin: 10px 0px 20px 0px;
   padding: 3px;
   cursor: pointer;
   width: 32px;
   height: 16px;
   background: #727272;
-  /* display: block; */
-  /* border-radius: 50em; */
-  /* position: relative; */
-  /* transition: .1s; */
-  /* box-sizing: border-box; */
 }
 
 .btn__container {
@@ -169,7 +162,9 @@ hr {
 .forgot__password {
   color: #fff;
   font-weight: 500;
-  border: 2px solid red;
+  display: grid;
+  place-content: center;
+  margin-block: 16px;
 }
 
 .register {
