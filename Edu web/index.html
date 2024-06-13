@@ -3,47 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edu-webhub</title>
+    <title>Edu-web</title>
 
-    <!-- ======== css =========== -->
+    <!-- ========== CSS  ========== -->
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <!-- ============= Start NAVBAR section =======-->
-    <header class="section-navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="index.html">
-            <img src="./src/logo.png" alt="logo" width="80px" height="auto" />
-          </a>
-        </div>
+    <header>
+      <nav class="nav container">
+        <a href="index.html">
+          <img src="./src/images/logo.png" class="nav-logo--img" />
+        </a>
 
-        <nav class="navbar">
-          <ul class="nav-item">
-            <li class="nav-list">
-              <a class="nav-link" href="/"> home</a>
-            </li>
-            <li class="nav-list">
-              <a class="nav-link" href="#"> about</a>
-            </li>
-            <li class="nav-list">
-              <a class="nav-link" href="#"> services</a>
-            </li>
-            <li class="nav-list">
-              <a class="nav-link" href="#"> blog</a>
-            </li>
-            <li class="nav-list">
-              <a class="nav-link" href="#"> contact</a>
-            </li>
-          </ul>
-          <input type="text" placeholder="helloe">
-        </nav>
-      </div>
+        <ul class="nav-list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="" class="nav__link">Blog</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <!-- ============= End NAVBAR section =======-->
 
-    <form action="" class="form__input">
+    <main>
+      <section class="hero-section">
+        <div class="hero-container container grid">
+          <div class="hero-container--content">
+            <p class="hero-subheading">EMPOWERING LIFELONG LEARNING</p>
+            <h1 class="hero-heading">
+              Unlock Your Potential with Thapa EduHub
+            </h1>
+            <p class="hero-para">
+              Welcome to Thapa EduHub, your gateway to knowledge and skill
+              development. We are dedicated to providing high-quality,
+              accessible education for learners of all ages and backgrounds
+            </p>
 
-    </form>
+            <div class="hero-btn">
+              <a href="services.html" class="btn home-btn">Learn with us</a>
+            </div>
+          </div>
+
+          <div class="hero-img">
+            <img src="./src/images/main-hero.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about container section">
+        <h2 class="section-title">About Thapa Eduhub</h2>
+        <p class="section-description">
+          Guiding Your Learning Journey through Research, Design, and
+          Development Excellence
+        </p>
+
+        <div class="about-container grid">
+          <div class="about-wrapper">
+            <div class="product-images">
+              <img src="./src/images/research.png" />
+            </div>
+
+            <div class="product-content">
+              <h3 class="product-title">Research</h3>
+              <p class="product-description">
+                We start by learning what you need. We look at what's new and
+                exciting in learning and choose topics that match what you want
+                to learn
+              </p>
+            </div>
+          </div>
+
+          <div class="about-wrapper">
+            <div class="product-images">
+              <img src="./src/images/design.png" alt="" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Design</h3>
+              <p class="product-description">
+                Next, we make the lessons. We make them fun and interesting for
+                you. We make sure they work for different ways people like to
+                learn.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-wrapper">
+            <div class="product-images">
+              <img src="./src/images/dev.png" alt="" />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Development</h3>
+              <p class="product-description">
+                After that, we turn the lessons into things you can use online.
+                We use the latest tools to make sure they work well and make you
+                happy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses container section">
+        <h2 class="section-title">Courses offered</h2>
+        <p class="section-description">
+          Discover a variety of courses across different categories.
+        </p>
+
+        <div class="courses-container grid"></div>
+      </section>
+    </main>
   </body>
 </html>
